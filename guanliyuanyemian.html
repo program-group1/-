@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    	#box1{background-color: yellow;height:200px;width:200px;margin:0 auto;}
+    	#box2{width:400;height:120;font:100px 宋体;margin:0 auto;text-align: center;}
+    	body{background-color: #CCFFFF;}
+    </style>	
+</head>
+<script>
+		function valideit(it) {
+			if (it.value.length<8) {it.setCustomValidity("请输入密码长度在8字符以上");}
+			else
+			{it.setCustomValidity("");}
+		}
+		function f1(it) {
+			if(it.value==11111111)
+
+			f1()=1;
+		}
+		function f2() {
+			if(f1()==1) {
+				window.open("guanlijiemian.html");
+
+		    }
+		}
+		function f4() {
+			window.open("guanlijiemian.html");
+		}
+</script>
+	<body>
+	<p id=box2>管理员登录</p>
+	<form id=box1>
+		<!--禁用浏览器验证 form novalidate-->
+		 账号：<input type="text" id="name" placeholder="请输入账号"; required oninput="f1(this);"></input>
+		 密码：<input type="password" id="name" required oninput="valideit(this);" ></input>
+		 <input type="submit" value="登录" onclick="f4()" />
+	</form>
+	</body>
+</html>
