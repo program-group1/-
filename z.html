@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<style>
+			body{background-color: #fff5ee}
+			#b1{width:60px;height:60px;background-color:#F4A460;position:absolute;right:300px;top:40px;}
+            #b2{width:60px;height:60px;background-color:#00FF7F;position:absolute;right:200px;top:40px;}
+		</style>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".1").click(function(){
+    $(".kele").fadeToggle("slow",function(){
+   
+    });
+  });
+   $(".2").click(function(){
+    $(".yifu").fadeToggle("slow",function(){
+   
+    });
+  });
+});
+</script>
+	</head>
+	<body>
+		<a href="登录.html">退出</a>
+		<button class="1"id="b1">食品</button>
+      <button class="2" id="b2">饮品</button>
+		<div class="container">
+			<div class="list">
+				<h3>商品列表</h3>
+				<ul class="goods">
+					<li class="kele">
+						<img src="1.jpg">
+						<p class="desc">矿泉水</p>
+						<!-- <p class="price">&yen;</p> -->
+						<a class="buy" href="s1.html">选择</a>
+					</li>
+					<li class="kele">
+						<img src="2.jpg">
+						<p class="desc">有色饮料</p>
+						<!-- <p class="price">&yen;</p> -->
+						<a class="buy" href="s2.html">选择</a>
+					</li>
+					<li class="kele">
+						<img src="3.jpg">
+						<p class="desc">可乐</p>
+						<!-- <p class="price">&yen;</p> -->
+						<a class="buy" href="s3.html">选择</a>
+					</li>
+					<li class="kele">
+						<img src="4.jpg">
+						<p class="desc">含气饮料</p>
+						<!-- <p class="price">&yen;</p> -->
+						<a class="buy" href="s4.html">选择</a>
+					</li>
+				</ul>
+				<ul class="goods">
+					<li class="kele">
+						<img src="5.jpg">
+						<p class="desc">咖啡</p>
+						<!-- <p class="price">&yen;</p> -->
+						<a class="buy" href="s5.html">选择</a>
+					</li>
+					<li class="yifu">
+						<img src="6.jpg">
+						<p class="desc">方便面</p>
+						<!-- <p class="price">&yen;</p> -->
+						<a class="buy" href="s6.html">选择</a>
+					</li>
+					<li class="yifu">
+						<img src="7.jpg">
+						<p class="desc">面包</p>
+						<!-- <p class="price">&yen;</p> -->
+						<a class="buy" href="s7.html">选择</a>
+					</li>
+					<li class="yifu">
+						<img src="8.jpg">
+						<p class="desc">饼干</p>
+						<!-- <p class="price">&yen;</p> -->
+						<a class="buy" href="s8.html">选择</a>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
